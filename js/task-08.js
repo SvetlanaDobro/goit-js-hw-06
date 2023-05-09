@@ -8,7 +8,7 @@ function onFormSubmit(event) {
     const formElements = event.currentTarget.elements;
 
     const mail = formElements.email.value;
-    const passvord = formElements.password.value;
+    const passvord = formElements.password.value.trim();
 
     if (!mail || !passvord) {
         alert('Будь ласка, заповніть усі поля форми!');
@@ -21,6 +21,6 @@ function onFormSubmit(event) {
     };
     console.log(formData);
 
-    form.reset();
+    event.target.reset();
 };
 

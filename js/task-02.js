@@ -23,4 +23,4 @@ const elements = makeElementIngredients(ingredients);
 
 ingredientsList.append(...elements);
 
-console.log(ingredientsList);
+

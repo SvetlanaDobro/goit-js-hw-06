@@ -26,5 +26,3 @@ const makeGallery = images => {
 const elements = makeGallery(images);
 
 gallery.insertAdjacentHTML('afterbegin', elements);
-
-console.log(gallery);
